@@ -1,0 +1,218 @@
+.footer {
+    background-color: #FAFAFA; 
+    padding: 50px 0 0; 
+    font-family: Arial, sans-serif;
+    color: #737373;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.05); 
+}
+
+.topSection {
+    width: 100%;
+    max-width: 1200px; 
+    padding: 20px 5%; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px; 
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #252B42; 
+}
+
+.socialIcons {
+    display: flex;
+    gap: 20px;
+}
+
+.icon {
+    font-size: 1.5em;
+    color: #23A6F0; 
+    transition: color 0.3s ease;
+}
+
+.icon:hover {
+    color: #1a7bb9; 
+}
+
+.separator {
+    width: 100%;
+    max-width: 1200px; 
+    border: none;
+    border-top: 1px solid #E6E6E6; 
+    margin-bottom: 50px; 
+}
+
+.columnsSection {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 30px; 
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 5%;
+    margin-bottom: 50px; 
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.columnTitle {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #252B42;
+    margin-bottom: 25px;
+}
+
+.linkList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.linkList li {
+    margin-bottom: 15px;
+}
+
+.linkList a {
+    text-decoration: none;
+    color: #737373;
+    font-size: 0.95em;
+    transition: color 0.3s ease;
+}
+
+.linkList a:hover {
+    color: #23A6F0; 
+}
+
+.subscribeForm {
+    display: flex;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.emailInput {
+    flex-grow: 1; 
+    padding: 10px 15px;
+    border: 1px solid #E6E6E6;
+    border-radius: 5px 0 0 5px; 
+    font-size: 0.9em;
+    color: #737373;
+}
+
+.emailInput::placeholder {
+    color: #BDBDBD; 
+}
+
+.subscribeButton {
+    padding: 10px 20px;
+    background-color: #23A6F0; 
+    color: white;
+    border: 1px solid #23A6F0; 
+    border-radius: 0 5px 5px 0; 
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    white-space: nowrap; 
+}
+
+.subscribeButton:hover {
+    background-color: #1a7bb9;
+    border-color: #1a7bb9;
+}
+
+.subscribeHint {
+    font-size: 0.8em;
+    color: #737373;
+    margin-top: 5px;
+}
+
+.bottomSection {
+    width: 100%;
+    background-color: #F8F8F8; 
+    padding: 25px 5%;
+    text-align: center;
+    color: #737373;
+    font-size: 0.9em;
+}
+
+.copyright {
+    margin: 0;
+}
+
+
+@media (max-width: 992px) {
+    .columnsSection {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        text-align: center; 
+    }
+
+    .column {
+        align-items: center;
+    }
+
+    .emailInput,
+    .subscribeButton {
+        font-size: 0.85em;
+    }
+}
+
+@media (max-width: 768px) {
+    .topSection {
+        flex-direction: column; 
+        text-align: center;
+        gap: 20px; 
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    .columnsSection {
+        grid-template-columns: 1fr; 
+        padding: 0 10%; 
+    }
+
+    .columnTitle {
+        margin-bottom: 15px; 
+    }
+
+    .linkList li {
+        margin-bottom: 10px;
+    }
+
+    .subscribeForm {
+        flex-direction: column;
+    }
+
+    .emailInput {
+        border-radius: 5px;
+        margin-bottom: 10px; 
+    }
+
+    .subscribeButton {
+        border-radius: 5px;
+        width: 100%; 
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 30px 0 0;
+    }
+
+    .topSection {
+        padding: 15px 5%;
+    }
+
+    .columnsSection {
+        padding: 0 5%;
+    }
+}

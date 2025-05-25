@@ -1,0 +1,36 @@
+export const blogPosts = [
+  {
+    id: 1,
+    image: "/blog1.jpg",
+    category: "Google",
+    tag: "Trending",
+    status: "New",
+    title: "Loudest à la Madison #1 (L'integral)",
+    excerpt: "We focus on ergonomics and meeting you where you work. It's only a keystroke away.",
+    date: "22 April 2021",
+    comments: "10 comments",
+  },
+  {
+    id: 2,
+    image: "/blog2.jpg",
+    category: "Google",
+    tag: "Trending",
+    status: "New",
+    title: "Loudest à la Madison #1 (L'integral)",
+    excerpt: "We focus on ergonomics and meeting you where you work. It's only a keystroke away.",
+    date: "22 April 2021",
+    comments: "10 comments",
+  },
+  {
+    id: 3,
+    image: "/blog3.jpg",
+    category: "Google",
+    tag: "Trending",
+    status: "New",
+    title: "Loudest à la Madison #1 (L'integral)",
+    excerpt: "We focus on ergonomics and meeting you where you work. It's only a keystroke away.",
+    date: "22 April 2021",
+    comments: "10 comments",
+  },
+];
+

@@ -1,0 +1,135 @@
+
+
+.pageContainer {
+    display: flex;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: 50px auto; 
+    width: 100%;
+    align-items: flex-start; 
+}
+
+.testimonialContent {
+    flex: 1;
+    padding-right: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
+}
+
+.sectionTitle {
+    color: #343a40;
+    font-size: 2em;
+    margin-bottom: 30px;
+    align-self: flex-start;  
+}
+
+.card {
+    margin-top: 50px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; 
+}
+
+.stars {
+    color: #ffc107; 
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.starFilled {
+    color: #ffc107; 
+    margin: 0 2px;
+}
+
+.starEmpty {
+    color: #d3d3d3;
+    margin: 0 2px;
+}
+
+
+.message {
+    color: #6c757d;
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.userInfo {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    margin-top: 15px;
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 20px; 
+}
+
+.name {
+    font-weight: bold;
+    color: #343a40;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+
+.role {
+    color: #6c757d;
+    font-size: 0.9em;
+}
+
+.imageGallery {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding-left: 40px;
+    border-left: 1px solid #e9ecef; 
+}
+
+.galleryImage {
+    width: 100%;
+    height: 180px; 
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+@media (max-width: 992px) {
+    .pageContainer {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .testimonialContent {
+        padding-right: 0;
+        padding-bottom: 40px; 
+        border-bottom: 1px solid #e9ecef; 
+        margin-bottom: 40px;
+    }
+
+    .sectionTitle {
+        align-self: center;
+        text-align: center;
+    }
+
+    .imageGallery {
+        padding-left: 0;
+        border-left: none; 
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 576px) {
+    .imageGallery {
+        grid-template-columns: 1fr; 
+    }
+}

@@ -1,0 +1,228 @@
+.header {
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: #252B42;
+}
+
+.topBar {
+    background-color: #23856D;
+    color: white;
+    padding: 10px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.85em;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.topBarLeft,
+.topBarRight,
+.topBarCenter {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.contactItem {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: white;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.contactItem:hover {
+    opacity: 0.8;
+}
+
+.topBarRight .socialIcons {
+    display: flex;
+    gap: 10px;
+}
+
+.topBarRight .socialIcons a {
+    color: white;
+    font-size: 1.1em;
+    transition: transform 0.3s ease;
+}
+
+.topBarRight .socialIcons a:hover {
+    transform: scale(1.1);
+}
+
+.mainNav {
+    background-color: white;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #252B42;
+}
+
+.navList {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.navList li a {
+    text-decoration: none;
+    color: #737373;
+    font-weight: 600;
+    font-size: 1em;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.navList li a:hover {
+    color: #23A6F0;
+}
+
+.navList .dropdown {
+    position: relative;
+}
+
+.navList .dropdown a svg {
+    margin-left: 3px;
+    font-size: 0.8em;
+}
+
+.navActions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.loginRegister {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    color: #23A6F0;
+    font-weight: 600;
+    transition: opacity 0.3s ease;
+}
+
+.loginRegister:hover {
+    opacity: 0.8;
+}
+
+.actionIcon {
+    position: relative;
+    color: #23A6F0;
+    font-size: 1.2em;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.actionIcon:hover {
+    transform: scale(1.1);
+}
+
+.badge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: #23A6F0;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 0.7em;
+    font-weight: bold;
+    line-height: 1;
+    transform: translate(50%, -50%);
+}
+
+@media (max-width: 992px) {
+    .topBar {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .topBarLeft,
+    .topBarRight,
+    .topBarCenter {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .mainNav {
+        flex-direction: column;
+        gap: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .navList {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navList li {
+        width: 100%;
+    }
+
+    .navList li a {
+        padding: 5px 0;
+        justify-content: center;
+    }
+
+    .navActions {
+        width: 100%;
+        justify-content: center;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .topBar {
+        font-size: 0.8em;
+        padding: 8px 3%;
+    }
+
+    .topBarRight .socialIcons a {
+        font-size: 1em;
+    }
+
+    .mainNav {
+        padding: 10px 3%;
+    }
+
+    .logo {
+        font-size: 1.5em;
+    }
+
+    .navList li a {
+        font-size: 0.9em;
+    }
+
+    .actionIcon {
+        font-size: 1.1em;
+    }
+
+    .badge {
+        font-size: 0.65em;
+        padding: 1px 5px;
+    }
+}

@@ -10,14 +10,14 @@ const services = [
   },
   {
     id: "concrete", 
-    icon: "/icon-concrete.png", 
+    icon: "/concrete image.png", 
     title: "Concrete",
     description:
       "Defalcate is most focused in helping you discover your most beautiful smile",
   },
   {
     id: "hack-growth", 
-    icon: "/concrete image.png", 
+    icon: "/icon-growth.jpg", 
     title: "Hack Growth",
     description: "Overcame any hurdle or any other problem.",
   },
